@@ -1,66 +1,94 @@
 # Dutch Flashcards
 
-A single-file flashcard app for learning everyday/survival Dutch, with per-topic
-decks and basic spaced repetition (mark "Know it" / "Don't know yet" — unknown
-words come back more often, known words fade out).
+Flashcard app for everyday/survival Dutch. Per-topic decks, phonetic
+pronunciation on every card, and basic spaced repetition. Words live in
+separate data files so adding a daily batch is a one-file commit.
 
-## How to use it
+## Setup (once)
 
 1. Push this repo to GitHub.
-2. In repo Settings -> Pages, set source to the `main` branch, root folder.
-3. GitHub gives you a URL like `https://<username>.github.io/dutch-flashcards/`.
-   Open that on your phone or laptop — no login, no build step, works offline
-   once loaded (progress is saved in the browser via localStorage).
+2. Settings -> Pages -> source: `main` branch, root folder.
+3. Open `https://<username>.github.io/dutch-flashcards/`.
 
-## Adding new daily word batches
+Progress is stored in your browser (localStorage), so it survives reloads but
+is per-device.
 
-All the vocabulary lives in the `DECKS` object near the top of the `<script>`
-tag in `index.html`. Each deck looks like this:
+## Repo layout
 
-```js
-"topicname": {
-  label: "Human-Readable Topic Name",
-  words: [
-    { nl: "dutch word", pron: "simple phonetic spelling", en: "english meaning", example: "Example sentence." },
-    ...
+```
+index.html            the app (rarely needs editing)
+data/
+  manifest.json       list of every data file to load
+  seed-*.json         starter decks
+  _TEMPLATE.json      copy this for new batches
+  2026-08-02.json     your daily files
+```
+
+## The daily workflow (your green squares)
+
+Each day, two small edits:
+
+**1. Add a new file** `data/YYYY-MM-DD.json`:
+
+```json
+{
+  "topic": "food",
+  "label": "Food & Drink",
+  "words": [
+    { "nl": "het brood", "pron": "ut broht", "en": "the bread", "example": "Ik koop het brood." }
   ]
 }
 ```
 
-The `pron` field is a simplified English-friendly phonetic spelling (not IPA),
-shown right on the card so you don't need a separate lookup. Key conventions
-used throughout, also shown as a legend on the page itself:
+**2. Add its filename to `data/manifest.json`:**
 
-- `kh` = the guttural Dutch g/ch sound (back-of-throat, like Scottish "loch")
-- `ay` = like "day"
-- `ew` = rounded "ee" (say "ee" with rounded lips, close to French "u")
+```json
+{ "files": ["seed-greetings.json", "...", "2026-08-02.json"] }
+```
+
+Commit both. Done — that's your daily commit, and the app picks the words up on
+next load.
+
+### How merging works
+
+Files are merged by their `topic` field, not by filename. So a daily file with
+`"topic": "shopping"` adds its words to the existing Shopping deck rather than
+creating a new one. Use a new `topic` value to start a fresh deck; it appears in
+the dropdown automatically.
+
+Duplicate Dutch words within a topic are ignored, so re-adding a word is
+harmless.
+
+## Word format
+
+```json
+{ "nl": "dutch", "pron": "phonetic", "en": "english", "example": "Sentence." }
+```
+
+`pron` is simplified English-friendly phonetics, not IPA. Conventions (also
+shown as a legend in the app):
+
+- `kh` = guttural Dutch g/ch (back of throat, like Scottish "loch")
+- `ay` = as in "day"
+- `ew` = rounded "ee" (say "ee" with rounded lips)
 - `uh` = short unstressed "a" as in "sofa"
 - CAPS = stressed syllable
 
-Ask Claude for new batches in this exact shape (with `pron` included) and
-just paste them into the relevant deck.
+## Local preview
 
-To add a new day's batch:
-- If it fits an existing topic (e.g. more shopping words), just append 10-15
-  new `{ nl, en, example }` entries to that deck's `words` array.
-- If it's a new topic (e.g. "Food", "Weather", "Work"), add a new key to
-  `DECKS` following the same shape. It will automatically show up in the
-  topic dropdown.
+Opening `index.html` directly via `file://` will fail — browsers block fetches
+from the filesystem. Run a local server instead:
 
-Ask Claude for the next day's batch already formatted as this JS object shape,
-and just paste it in — no other code changes needed.
+```bash
+python3 -m http.server
+```
 
-## Current decks
+Then open `http://localhost:8000`.
 
-- Greetings & Basics
-- Numbers
-- Shopping
-- Transport
-- Small Talk
+## Notes
 
-## Suggested daily rhythm
-
-- 10-15 new words per day, added to the relevant deck
-- Review the deck for 5-10 minutes in the morning and again after work
-- Once a deck's mastery counter (shown in the dropdown) is close to full,
-  start a new topic
+- Words are sorted alphabetically within a deck, and progress is keyed by the
+  Dutch word itself, so reordering or inserting words never scrambles your
+  learning progress.
+- A file listed in the manifest but missing from disk is skipped with a console
+  warning rather than breaking the app.

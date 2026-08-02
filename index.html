@@ -28,208 +28,121 @@
     align-items: center;
     padding: 24px 16px 60px;
   }
-  h1 {
-    font-size: 1.4rem;
-    margin: 8px 0 4px;
-    letter-spacing: 0.02em;
-  }
-  .subtitle {
-    color: var(--text-dim);
-    font-size: 0.85rem;
-    margin-bottom: 20px;
-    text-align: center;
-  }
+  h1 { font-size: 1.4rem; margin: 8px 0 4px; letter-spacing: 0.02em; }
+  .subtitle { color: var(--text-dim); font-size: 0.85rem; margin-bottom: 16px; text-align: center; }
   .pron-key {
-    width: 100%;
-    max-width: 480px;
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 10px;
-    padding: 10px 14px;
-    font-size: 0.75rem;
-    color: var(--text-dim);
-    margin-bottom: 18px;
-    line-height: 1.6;
+    width: 100%; max-width: 480px;
+    background: var(--card-bg); border: 1px solid var(--card-border);
+    border-radius: 10px; padding: 10px 14px;
+    font-size: 0.75rem; color: var(--text-dim);
+    margin-bottom: 18px; line-height: 1.6;
   }
-  .pron-key strong {
-    color: var(--text);
-    display: block;
-    margin-bottom: 4px;
-  }
-  .pron-key-item {
-    display: block;
-  }
-  .pron-key b {
-    color: var(--accent2);
-  }
+  .pron-key strong { color: var(--text); display: block; margin-bottom: 4px; }
+  .pron-key-item { display: block; }
+  .pron-key b { color: var(--accent2); }
   .top-bar {
-    width: 100%;
-    max-width: 480px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 16px;
+    width: 100%; max-width: 480px;
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 16px; gap: 10px;
   }
   select {
-    background: var(--card-bg);
-    color: var(--text);
-    border: 1px solid var(--card-border);
-    border-radius: 8px;
-    padding: 8px 12px;
-    font-size: 0.9rem;
+    background: var(--card-bg); color: var(--text);
+    border: 1px solid var(--card-border); border-radius: 8px;
+    padding: 8px 12px; font-size: 0.9rem; flex: 1; min-width: 0;
   }
-  .stats {
-    font-size: 0.8rem;
-    color: var(--text-dim);
-  }
+  .stats { font-size: 0.8rem; color: var(--text-dim); white-space: nowrap; }
   .deck-progress {
-    width: 100%;
-    max-width: 480px;
-    height: 6px;
-    background: var(--card-border);
-    border-radius: 3px;
-    overflow: hidden;
-    margin-bottom: 24px;
+    width: 100%; max-width: 480px; height: 6px;
+    background: var(--card-border); border-radius: 3px;
+    overflow: hidden; margin-bottom: 24px;
   }
   .deck-progress-fill {
     height: 100%;
     background: linear-gradient(90deg, var(--accent2), var(--good));
     transition: width 0.3s ease;
   }
-  .card-wrap {
-    width: 100%;
-    max-width: 480px;
-    perspective: 1200px;
-    height: 260px;
-    margin-bottom: 24px;
-  }
+  .card-wrap { width: 100%; max-width: 480px; perspective: 1200px; height: 260px; margin-bottom: 24px; }
   .card {
-    width: 100%;
-    height: 100%;
-    position: relative;
+    width: 100%; height: 100%; position: relative;
     transform-style: preserve-3d;
     transition: transform 0.45s cubic-bezier(.4,.2,.2,1);
     cursor: pointer;
   }
   .card.flipped { transform: rotateY(180deg); }
   .card-face {
-    position: absolute;
-    inset: 0;
-    backface-visibility: hidden;
-    border-radius: 18px;
-    background: var(--card-bg);
+    position: absolute; inset: 0; backface-visibility: hidden;
+    border-radius: 18px; background: var(--card-bg);
     border: 1px solid var(--card-border);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-    text-align: center;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 24px; text-align: center;
   }
   .card-face.back { transform: rotateY(180deg); }
-  .word-main {
-    font-size: 2rem;
-    font-weight: 600;
-  }
-  .word-sub {
-    color: var(--text-dim);
-    font-size: 0.95rem;
-    margin-top: 10px;
-  }
+  .word-main { font-size: 2rem; font-weight: 600; }
   .word-pron {
-    color: var(--accent2);
-    font-size: 1rem;
-    margin-top: 8px;
-    letter-spacing: 0.02em;
-    font-weight: 500;
+    color: var(--accent2); font-size: 1rem; margin-top: 8px;
+    letter-spacing: 0.02em; font-weight: 500;
   }
   .word-example {
-    margin-top: 18px;
-    font-size: 0.85rem;
-    color: var(--text-dim);
-    font-style: italic;
-    max-width: 380px;
+    margin-top: 18px; font-size: 0.85rem; color: var(--text-dim);
+    font-style: italic; max-width: 380px;
   }
   .tap-hint {
-    position: absolute;
-    bottom: 14px;
-    font-size: 0.7rem;
-    color: var(--text-dim);
-    opacity: 0.6;
+    position: absolute; bottom: 14px; font-size: 0.7rem;
+    color: var(--text-dim); opacity: 0.6;
   }
-  .actions {
-    display: flex;
-    gap: 14px;
-    width: 100%;
-    max-width: 480px;
-  }
+  .actions { display: flex; gap: 14px; width: 100%; max-width: 480px; }
   button.action {
-    flex: 1;
-    padding: 16px;
-    border: none;
-    border-radius: 12px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
+    flex: 1; padding: 16px; border: none; border-radius: 12px;
+    font-size: 1rem; font-weight: 600; cursor: pointer;
     transition: transform 0.1s ease, opacity 0.2s;
   }
   button.action:active { transform: scale(0.96); }
   button.dont-know {
-    background: rgba(255,92,92,0.15);
-    color: var(--bad);
+    background: rgba(255,92,92,0.15); color: var(--bad);
     border: 1px solid rgba(255,92,92,0.3);
   }
   button.know {
-    background: rgba(62,207,142,0.15);
-    color: var(--good);
+    background: rgba(62,207,142,0.15); color: var(--good);
     border: 1px solid rgba(62,207,142,0.3);
   }
   .empty-state {
-    text-align: center;
-    color: var(--text-dim);
-    padding: 40px 20px;
-    max-width: 420px;
+    text-align: center; color: var(--text-dim);
+    padding: 40px 20px; max-width: 420px;
   }
-  .empty-state .big {
-    font-size: 1.1rem;
-    color: var(--good);
-    margin-bottom: 8px;
+  .empty-state .big { font-size: 1.1rem; color: var(--good); margin-bottom: 8px; }
+  .error-state {
+    text-align: center; color: var(--text-dim);
+    padding: 30px 20px; max-width: 440px;
+    background: var(--card-bg); border: 1px solid var(--card-border);
+    border-radius: 12px; font-size: 0.85rem; line-height: 1.6;
+  }
+  .error-state .big { color: var(--bad); font-size: 1rem; margin-bottom: 10px; font-weight: 600; }
+  .error-state code {
+    background: var(--bg); padding: 2px 6px; border-radius: 4px;
+    color: var(--accent2); font-size: 0.8rem;
   }
   .reset-link {
-    margin-top: 20px;
-    background: none;
-    border: none;
-    color: var(--accent2);
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 0.85rem;
+    margin-top: 20px; background: none; border: none;
+    color: var(--accent2); text-decoration: underline;
+    cursor: pointer; font-size: 0.85rem;
   }
-  .mastery-badges {
-    display: flex;
-    gap: 4px;
-    margin-top: 10px;
-    justify-content: center;
-  }
-  .badge {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--card-border);
-  }
+  .mastery-badges { display: flex; gap: 4px; margin-top: 10px; justify-content: center; }
+  .badge { width: 8px; height: 8px; border-radius: 50%; background: var(--card-border); }
   .badge.filled { background: var(--good); }
+  .loading { color: var(--text-dim); padding: 40px; text-align: center; }
   footer {
-    margin-top: 40px;
-    font-size: 0.75rem;
-    color: var(--text-dim);
-    text-align: center;
-    max-width: 480px;
+    margin-top: 40px; font-size: 0.75rem;
+    color: var(--text-dim); text-align: center; max-width: 480px;
   }
+  .word-count { font-size: 0.7rem; color: var(--text-dim); margin-top: 6px; }
 </style>
 </head>
 <body>
 
 <h1>Dutch Flashcards</h1>
 <div class="subtitle">Everyday survival Dutch, one deck at a time</div>
+
 <div class="pron-key">
   <strong>Pronunciation key:</strong>
   <span class="pron-key-item"><b>kh</b> = guttural, back-of-throat "g" (like clearing your throat softly, as in Scottish "loch")</span>
@@ -246,105 +159,28 @@
 
 <div class="deck-progress"><div class="deck-progress-fill" id="progressFill"></div></div>
 
-<div id="cardArea"></div>
+<div id="cardArea"><div class="loading">Loading words...</div></div>
 
 <footer>
-  Tap the card to flip it. "Don't know yet" brings the word back sooner. Progress is saved in this browser only.
+  Tap the card to flip it. "Don't know yet" brings the word back sooner.
+  Progress is saved in this browser only.
+  <div class="word-count" id="totalCount"></div>
 </footer>
 
 <script>
-// ---------- DATA ----------
-// Add new decks/topics here as new keys. Each word: nl (Dutch), en (English), example (optional NL sentence).
-const DECKS = {
-  "greetings": {
-    label: "Greetings & Basics",
-    words: [
-      { nl: "hallo", pron: "HAH-loh", en: "hello", example: "Hallo, hoe gaat het?" },
-      { nl: "dag", pron: "dahkh", en: "bye / hi (informal)", example: "Dag! Tot ziens." },
-      { nl: "goedemorgen", pron: "KHOO-duh-mor-khun", en: "good morning", example: "Goedemorgen allemaal." },
-      { nl: "goedemiddag", pron: "KHOO-duh-mih-dahkh", en: "good afternoon", example: "Goedemiddag, meneer." },
-      { nl: "goedenavond", pron: "KHOO-dun-AH-vont", en: "good evening", example: "Goedenavond, welkom." },
-      { nl: "tot ziens", pron: "tot zeens", en: "goodbye", example: "Tot ziens, fijne dag nog." },
-      { nl: "alsjeblieft", pron: "AHL-shuh-bleeft", en: "please / here you go", example: "Alsjeblieft, dit is voor jou." },
-      { nl: "dank je wel", pron: "dahnk yuh vel", en: "thank you", example: "Dank je wel voor je hulp." },
-      { nl: "sorry", pron: "SOR-ee", en: "sorry", example: "Sorry, ik was te laat." },
-      { nl: "ja", pron: "yah", en: "yes", example: "Ja, dat klopt." },
-      { nl: "nee", pron: "nay", en: "no", example: "Nee, dat is niet zo." },
-      { nl: "hoe gaat het", pron: "hoo khaht ut", en: "how are you", example: "Hoe gaat het met jou?" },
-      { nl: "goed, dank je", pron: "khoot, dahnk yuh", en: "good, thanks", example: "Goed, dank je, en met jou?" },
-      { nl: "tot morgen", pron: "tot MOR-khun", en: "see you tomorrow", example: "Tot morgen dan!" }
-    ]
-  },
-  "numbers": {
-    label: "Numbers",
-    words: [
-      { nl: "een", pron: "ayn", en: "one", example: "Ik heb een euro." },
-      { nl: "twee", pron: "tvay", en: "two", example: "Twee koffie, alstublieft." },
-      { nl: "drie", pron: "dree", en: "three", example: "Drie broden, graag." },
-      { nl: "vier", pron: "veer", en: "four", example: "Het is vier uur." },
-      { nl: "vijf", pron: "veyf", en: "five", example: "Vijf minuten wachten." },
-      { nl: "zes", pron: "zes", en: "six", example: "Zes appels kosten twee euro." },
-      { nl: "zeven", pron: "ZAY-vun", en: "seven", example: "Zeven dagen in een week." },
-      { nl: "acht", pron: "ahkht", en: "eight", example: "Acht uur 's ochtends." },
-      { nl: "negen", pron: "NAY-khun", en: "nine", example: "Negen euro vijftig." },
-      { nl: "tien", pron: "teen", en: "ten", example: "Tien minuten lopen." },
-      { nl: "twintig", pron: "TVIN-tukh", en: "twenty", example: "Twintig euro, alstublieft." },
-      { nl: "honderd", pron: "HON-dert", en: "hundred", example: "Honderd meter verderop." }
-    ]
-  },
-  "shopping": {
-    label: "Shopping",
-    words: [
-      { nl: "de winkel", pron: "duh VIN-kul", en: "the shop", example: "De winkel is dicht op zondag." },
-      { nl: "de supermarkt", pron: "duh SOO-per-markt", en: "the supermarket", example: "Ik ga naar de supermarkt." },
-      { nl: "de kassa", pron: "duh KAH-sah", en: "the checkout", example: "Sta in de rij bij de kassa." },
-      { nl: "het geld", pron: "ut khelt", en: "the money", example: "Heb je genoeg geld?" },
-      { nl: "de prijs", pron: "duh preys", en: "the price", example: "Wat is de prijs van dit?" },
-      { nl: "duur", pron: "dewr", en: "expensive", example: "Dit is te duur voor mij." },
-      { nl: "goedkoop", pron: "khoot-KOHP", en: "cheap", example: "Dat is heel goedkoop." },
-      { nl: "de bon", pron: "duh bon", en: "the receipt", example: "Mag ik de bon, alstublieft?" },
-      { nl: "afrekenen", pron: "AH-fray-kuh-nun", en: "to pay / check out", example: "Kan ik hier afrekenen?" },
-      { nl: "passen", pron: "PAH-sun", en: "to try on", example: "Mag ik dit passen?" },
-      { nl: "de korting", pron: "duh KOR-ting", en: "the discount", example: "Er is korting op schoenen." },
-      { nl: "het wisselgeld", pron: "ut VIH-sul-khelt", en: "the change (money)", example: "Hier is uw wisselgeld." }
-    ]
-  },
-  "transport": {
-    label: "Transport",
-    words: [
-      { nl: "de trein", pron: "duh treyn", en: "the train", example: "De trein vertrekt om negen uur." },
-      { nl: "de bus", pron: "duh bus", en: "the bus", example: "Ik neem de bus naar school." },
-      { nl: "het station", pron: "ut stah-SHON", en: "the station", example: "Waar is het station?" },
-      { nl: "het kaartje", pron: "ut KAHR-tyuh", en: "the ticket", example: "Ik moet een kaartje kopen." },
-      { nl: "de fiets", pron: "duh feets", en: "the bicycle", example: "In Nederland fietst iedereen." },
-      { nl: "links", pron: "links", en: "left", example: "Ga linksaf bij het licht." },
-      { nl: "rechts", pron: "rekhts", en: "right", example: "Sla rechtsaf hier." },
-      { nl: "rechtdoor", pron: "REKHT-dohr", en: "straight ahead", example: "Ga rechtdoor tot het plein." },
-      { nl: "de halte", pron: "duh HAHL-tuh", en: "the (bus/tram) stop", example: "De halte is dichtbij." },
-      { nl: "instappen", pron: "IN-stah-pun", en: "to get on / board", example: "U kunt nu instappen." },
-      { nl: "uitstappen", pron: "OWT-stah-pun", en: "to get off", example: "Ik moet hier uitstappen." },
-      { nl: "vertraging", pron: "ver-TRAH-khing", en: "delay", example: "De trein heeft vertraging." }
-    ]
-  },
-  "smalltalk": {
-    label: "Small Talk",
-    words: [
-      { nl: "leuk je te ontmoeten", pron: "lurk yuh tuh ont-MOO-tun", en: "nice to meet you", example: "Leuk je te ontmoeten!" },
-      { nl: "waar kom je vandaan", pron: "vahr kom yuh van-DAHN", en: "where are you from", example: "Waar kom je vandaan?" },
-      { nl: "ik kom uit Hongarije", pron: "ik kom owt hon-gah-REY-uh", en: "I'm from Hungary", example: "Ik kom uit Hongarije." },
-      { nl: "wat doe je voor werk", pron: "vat doo yuh vohr verk", en: "what do you do for work", example: "Wat doe je voor werk?" },
-      { nl: "ik studeer", pron: "ik stew-DAYR", en: "I study", example: "Ik studeer informatica." },
-      { nl: "het weer", pron: "ut vayr", en: "the weather", example: "Het weer is vandaag mooi." },
-      { nl: "misschien", pron: "mis-KHEEN", en: "maybe", example: "Misschien kom ik ook." },
-      { nl: "natuurlijk", pron: "nah-TEWR-luhk", en: "of course", example: "Natuurlijk help ik je." },
-      { nl: "geen probleem", pron: "khayn proh-BLAYM", en: "no problem", example: "Geen probleem, graag gedaan." },
-      { nl: "tot straks", pron: "tot strahks", en: "see you soon / later today", example: "Tot straks bij de les." }
-    ]
-  }
-};
+// ---------- CONFIG ----------
+const DATA_DIR = "data/";
+const MANIFEST = DATA_DIR + "manifest.json";
 
 // ---------- STATE ----------
 const STORAGE_KEY = "dutch_flashcard_progress_v1";
+let DECKS = {};
+let progress = loadProgress();
+let currentDeckKey = null;
+let queue = [];
+let currentCardIdx = null;
+let isFlipped = false;
+
 function loadProgress() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
@@ -352,29 +188,67 @@ function loadProgress() {
   } catch(e) { return {}; }
 }
 function saveProgress(p) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(p)); } catch(e) {}
 }
 
-let progress = loadProgress(); // { deckKey: { wordIndex: {box: 0-3, seen: n} } }
-let currentDeckKey = Object.keys(DECKS)[0];
-let queue = [];
-let currentCardIdx = null;
-let isFlipped = false;
+// ---------- DATA LOADING ----------
+async function loadAllData() {
+  const manifest = await fetch(MANIFEST + "?v=" + Date.now()).then(r => {
+    if (!r.ok) throw new Error("manifest " + r.status);
+    return r.json();
+  });
 
-function getWordState(deckKey, idx) {
+  const files = manifest.files || [];
+  const results = await Promise.all(files.map(async fname => {
+    try {
+      const res = await fetch(DATA_DIR + fname + "?v=" + Date.now());
+      if (!res.ok) { console.warn("Skipped (not found):", fname); return null; }
+      return await res.json();
+    } catch (e) {
+      console.warn("Skipped (bad JSON):", fname, e);
+      return null;
+    }
+  }));
+
+  // Merge every file into decks keyed by topic
+  const merged = {};
+  results.filter(Boolean).forEach(fileData => {
+    const topic = fileData.topic;
+    if (!topic || !Array.isArray(fileData.words)) return;
+    if (!merged[topic]) {
+      merged[topic] = { label: fileData.label || topic, words: [] };
+    }
+    if (fileData.label) merged[topic].label = fileData.label;
+    fileData.words.forEach(w => {
+      if (!w.nl || !w.en) return;
+      // de-duplicate by Dutch word within a topic
+      if (merged[topic].words.some(existing => existing.nl === w.nl)) return;
+      merged[topic].words.push(w);
+    });
+  });
+
+  // Stable ordering so progress indices stay consistent across reloads
+  Object.keys(merged).forEach(topic => {
+    merged[topic].words.sort((a, b) => a.nl.localeCompare(b.nl, "nl"));
+  });
+
+  return merged;
+}
+
+// ---------- SPACED REPETITION ----------
+function getWordState(deckKey, wordKey) {
   if (!progress[deckKey]) progress[deckKey] = {};
-  if (!progress[deckKey][idx]) progress[deckKey][idx] = { box: 0, seen: 0 };
-  return progress[deckKey][idx];
+  if (!progress[deckKey][wordKey]) progress[deckKey][wordKey] = { box: 0, seen: 0 };
+  return progress[deckKey][wordKey];
 }
 
 function buildQueue(deckKey) {
   const deck = DECKS[deckKey];
-  const items = deck.words.map((w, i) => ({ idx: i, state: getWordState(deckKey, i) }));
-  // Weighted: box 0 (new/unknown) appears most, box 3 (mastered) rarely
   const weighted = [];
-  items.forEach(item => {
-    const weight = item.state.box === 0 ? 4 : item.state.box === 1 ? 3 : item.state.box === 2 ? 1 : 0;
-    for (let i = 0; i < weight; i++) weighted.push(item.idx);
+  deck.words.forEach((w, i) => {
+    const st = getWordState(deckKey, w.nl);
+    const weight = st.box === 0 ? 4 : st.box === 1 ? 3 : st.box === 2 ? 1 : 0;
+    for (let k = 0; k < weight; k++) weighted.push(i);
   });
   return weighted.sort(() => Math.random() - 0.5);
 }
@@ -382,46 +256,38 @@ function buildQueue(deckKey) {
 function deckMasteryCount(deckKey) {
   const deck = DECKS[deckKey];
   let mastered = 0;
-  deck.words.forEach((w, i) => {
-    const st = progress[deckKey] && progress[deckKey][i];
+  deck.words.forEach(w => {
+    const st = progress[deckKey] && progress[deckKey][w.nl];
     if (st && st.box >= 3) mastered++;
   });
   return mastered;
 }
 
+// ---------- RENDER ----------
 function renderDeckSelect() {
   const sel = document.getElementById("deckSelect");
   sel.innerHTML = "";
-  Object.keys(DECKS).forEach(key => {
+  Object.keys(DECKS).sort().forEach(key => {
     const opt = document.createElement("option");
     opt.value = key;
-    const mastered = deckMasteryCount(key);
-    const total = DECKS[key].words.length;
-    opt.textContent = `${DECKS[key].label} (${mastered}/${total})`;
+    opt.textContent = `${DECKS[key].label} (${deckMasteryCount(key)}/${DECKS[key].words.length})`;
     if (key === currentDeckKey) opt.selected = true;
     sel.appendChild(opt);
   });
 }
 
 function updateStatsAndProgress() {
-  const deck = DECKS[currentDeckKey];
+  if (!currentDeckKey || !DECKS[currentDeckKey]) return;
+  const total = DECKS[currentDeckKey].words.length;
   const mastered = deckMasteryCount(currentDeckKey);
-  const total = deck.words.length;
   document.getElementById("deckStats").textContent = `${mastered}/${total} mastered`;
-  document.getElementById("progressFill").style.width = `${(mastered/total)*100}%`;
+  document.getElementById("progressFill").style.width = total ? `${(mastered/total)*100}%` : "0%";
 }
 
 function nextCard() {
   isFlipped = false;
-  if (queue.length === 0) {
-    queue = buildQueue(currentDeckKey);
-  }
-  if (queue.length === 0) {
-    // fully mastered
-    currentCardIdx = null;
-    renderCard();
-    return;
-  }
+  if (queue.length === 0) queue = buildQueue(currentDeckKey);
+  if (queue.length === 0) { currentCardIdx = null; renderCard(); return; }
   currentCardIdx = queue.shift();
   renderCard();
 }
@@ -434,17 +300,15 @@ function renderCard() {
     area.innerHTML = `
       <div class="empty-state">
         <div class="big">All words in this deck are mastered.</div>
-        Switch decks above, or reset this deck's progress to practice again.
+        Switch decks above, or reset this deck to practice again.
         <br>
         <button class="reset-link" onclick="resetDeck()">Reset this deck's progress</button>
-      </div>
-    `;
+      </div>`;
     return;
   }
 
-  const deck = DECKS[currentDeckKey];
-  const word = deck.words[currentCardIdx];
-  const state = getWordState(currentDeckKey, currentCardIdx);
+  const word = DECKS[currentDeckKey].words[currentCardIdx];
+  const state = getWordState(currentDeckKey, word.nl);
   const badges = [0,1,2].map(i => `<div class="badge ${i < state.box ? 'filled' : ''}"></div>`).join("");
 
   area.innerHTML = `
@@ -458,7 +322,7 @@ function renderCard() {
         </div>
         <div class="card-face back">
           <div class="word-main">${word.en}</div>
-          ${word.pron ? `<div class="word-pron">${word.nl} — / ${word.pron} /</div>` : ""}
+          ${word.pron ? `<div class="word-pron">${word.nl} &mdash; / ${word.pron} /</div>` : ""}
           ${word.example ? `<div class="word-example">"${word.example}"</div>` : ""}
           <div class="tap-hint">tap to flip back</div>
         </div>
@@ -467,8 +331,7 @@ function renderCard() {
     <div class="actions">
       <button class="action dont-know" onclick="answer(false)">Don't know yet</button>
       <button class="action know" onclick="answer(true)">Know it</button>
-    </div>
-  `;
+    </div>`;
 }
 
 function flipCard() {
@@ -479,13 +342,10 @@ function flipCard() {
 
 function answer(knew) {
   if (currentCardIdx === null) return;
-  const state = getWordState(currentDeckKey, currentCardIdx);
+  const word = DECKS[currentDeckKey].words[currentCardIdx];
+  const state = getWordState(currentDeckKey, word.nl);
   state.seen++;
-  if (knew) {
-    state.box = Math.min(3, state.box + 1);
-  } else {
-    state.box = 0;
-  }
+  state.box = knew ? Math.min(3, state.box + 1) : 0;
   saveProgress(progress);
   renderDeckSelect();
   nextCard();
@@ -499,15 +359,41 @@ function resetDeck() {
   nextCard();
 }
 
-document.getElementById("deckSelect").addEventListener("change", (e) => {
+document.getElementById("deckSelect").addEventListener("change", e => {
   currentDeckKey = e.target.value;
   queue = [];
   nextCard();
 });
 
 // ---------- INIT ----------
-renderDeckSelect();
-nextCard();
+(async function init() {
+  try {
+    DECKS = await loadAllData();
+    const keys = Object.keys(DECKS);
+    if (keys.length === 0) throw new Error("No decks found in data files.");
+    currentDeckKey = keys.sort()[0];
+    const total = keys.reduce((sum, k) => sum + DECKS[k].words.length, 0);
+    document.getElementById("totalCount").textContent =
+      `${total} words across ${keys.length} decks`;
+    renderDeckSelect();
+    nextCard();
+  } catch (err) {
+    document.getElementById("cardArea").innerHTML = `
+      <div class="error-state">
+        <div class="big">Could not load word data</div>
+        The app fetches <code>data/manifest.json</code> and the files it lists.
+        <br><br>
+        If you opened this file directly from your computer
+        (<code>file://</code>), browsers block those fetches. Serve it locally with
+        <code>python3 -m http.server</code> in the repo folder, or just push to
+        GitHub Pages where it works normally.
+        <br><br>
+        Otherwise, check that every filename in the manifest actually exists in
+        <code>data/</code> and contains valid JSON.
+      </div>`;
+    console.error(err);
+  }
+})();
 </script>
 
 </body>
