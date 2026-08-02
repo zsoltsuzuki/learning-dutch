@@ -1,0 +1,16 @@
+{
+  "topic": "smalltalk",
+  "label": "Small Talk",
+  "words": [
+    { "nl": "leuk je te ontmoeten", "pron": "lurk yuh tuh ont-MOO-tun", "en": "nice to meet you", "example": "Leuk je te ontmoeten!" },
+    { "nl": "waar kom je vandaan", "pron": "vahr kom yuh van-DAHN", "en": "where are you from", "example": "Waar kom je vandaan?" },
+    { "nl": "ik kom uit Hongarije", "pron": "ik kom owt hon-gah-REY-uh", "en": "I'm from Hungary", "example": "Ik kom uit Hongarije." },
+    { "nl": "wat doe je voor werk", "pron": "vat doo yuh vohr verk", "en": "what do you do for work", "example": "Wat doe je voor werk?" },
+    { "nl": "ik studeer", "pron": "ik stew-DAYR", "en": "I study", "example": "Ik studeer informatica." },
+    { "nl": "het weer", "pron": "ut vayr", "en": "the weather", "example": "Het weer is vandaag mooi." },
+    { "nl": "misschien", "pron": "mis-KHEEN", "en": "maybe", "example": "Misschien kom ik ook." },
+    { "nl": "natuurlijk", "pron": "nah-TEWR-luhk", "en": "of course", "example": "Natuurlijk help ik je." },
+    { "nl": "geen probleem", "pron": "khayn proh-BLAYM", "en": "no problem", "example": "Geen probleem, graag gedaan." },
+    { "nl": "tot straks", "pron": "tot strahks", "en": "see you soon / later today", "example": "Tot straks bij de les." }
+  ]
+}

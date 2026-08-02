@@ -1,0 +1,20 @@
+{
+  "topic": "greetings",
+  "label": "Greetings & Basics",
+  "words": [
+    { "nl": "hallo", "pron": "HAH-loh", "en": "hello", "example": "Hallo, hoe gaat het?" },
+    { "nl": "dag", "pron": "dahkh", "en": "bye / hi (informal)", "example": "Dag! Tot ziens." },
+    { "nl": "goedemorgen", "pron": "KHOO-duh-mor-khun", "en": "good morning", "example": "Goedemorgen allemaal." },
+    { "nl": "goedemiddag", "pron": "KHOO-duh-mih-dahkh", "en": "good afternoon", "example": "Goedemiddag, meneer." },
+    { "nl": "goedenavond", "pron": "KHOO-dun-AH-vont", "en": "good evening", "example": "Goedenavond, welkom." },
+    { "nl": "tot ziens", "pron": "tot zeens", "en": "goodbye", "example": "Tot ziens, fijne dag nog." },
+    { "nl": "alsjeblieft", "pron": "AHL-shuh-bleeft", "en": "please / here you go", "example": "Alsjeblieft, dit is voor jou." },
+    { "nl": "dank je wel", "pron": "dahnk yuh vel", "en": "thank you", "example": "Dank je wel voor je hulp." },
+    { "nl": "sorry", "pron": "SOR-ee", "en": "sorry", "example": "Sorry, ik was te laat." },
+    { "nl": "ja", "pron": "yah", "en": "yes", "example": "Ja, dat klopt." },
+    { "nl": "nee", "pron": "nay", "en": "no", "example": "Nee, dat is niet zo." },
+    { "nl": "hoe gaat het", "pron": "hoo khaht ut", "en": "how are you", "example": "Hoe gaat het met jou?" },
+    { "nl": "goed, dank je", "pron": "khoot, dahnk yuh", "en": "good, thanks", "example": "Goed, dank je, en met jou?" },
+    { "nl": "tot morgen", "pron": "tot MOR-khun", "en": "see you tomorrow", "example": "Tot morgen dan!" }
+  ]
+}

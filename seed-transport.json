@@ -1,0 +1,18 @@
+{
+  "topic": "transport",
+  "label": "Transport",
+  "words": [
+    { "nl": "de trein", "pron": "duh treyn", "en": "the train", "example": "De trein vertrekt om negen uur." },
+    { "nl": "de bus", "pron": "duh bus", "en": "the bus", "example": "Ik neem de bus naar school." },
+    { "nl": "het station", "pron": "ut stah-SHON", "en": "the station", "example": "Waar is het station?" },
+    { "nl": "het kaartje", "pron": "ut KAHR-tyuh", "en": "the ticket", "example": "Ik moet een kaartje kopen." },
+    { "nl": "de fiets", "pron": "duh feets", "en": "the bicycle", "example": "In Nederland fietst iedereen." },
+    { "nl": "links", "pron": "links", "en": "left", "example": "Ga linksaf bij het licht." },
+    { "nl": "rechts", "pron": "rekhts", "en": "right", "example": "Sla rechtsaf hier." },
+    { "nl": "rechtdoor", "pron": "REKHT-dohr", "en": "straight ahead", "example": "Ga rechtdoor tot het plein." },
+    { "nl": "de halte", "pron": "duh HAHL-tuh", "en": "the (bus/tram) stop", "example": "De halte is dichtbij." },
+    { "nl": "instappen", "pron": "IN-stah-pun", "en": "to get on / board", "example": "U kunt nu instappen." },
+    { "nl": "uitstappen", "pron": "OWT-stah-pun", "en": "to get off", "example": "Ik moet hier uitstappen." },
+    { "nl": "vertraging", "pron": "ver-TRAH-khing", "en": "delay", "example": "De trein heeft vertraging." }
+  ]
+}

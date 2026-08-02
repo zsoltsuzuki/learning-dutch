@@ -1,0 +1,18 @@
+{
+  "topic": "numbers",
+  "label": "Numbers",
+  "words": [
+    { "nl": "een", "pron": "ayn", "en": "one", "example": "Ik heb een euro." },
+    { "nl": "twee", "pron": "tvay", "en": "two", "example": "Twee koffie, alstublieft." },
+    { "nl": "drie", "pron": "dree", "en": "three", "example": "Drie broden, graag." },
+    { "nl": "vier", "pron": "veer", "en": "four", "example": "Het is vier uur." },
+    { "nl": "vijf", "pron": "veyf", "en": "five", "example": "Vijf minuten wachten." },
+    { "nl": "zes", "pron": "zes", "en": "six", "example": "Zes appels kosten twee euro." },
+    { "nl": "zeven", "pron": "ZAY-vun", "en": "seven", "example": "Zeven dagen in een week." },
+    { "nl": "acht", "pron": "ahkht", "en": "eight", "example": "Acht uur 's ochtends." },
+    { "nl": "negen", "pron": "NAY-khun", "en": "nine", "example": "Negen euro vijftig." },
+    { "nl": "tien", "pron": "teen", "en": "ten", "example": "Tien minuten lopen." },
+    { "nl": "twintig", "pron": "TVIN-tukh", "en": "twenty", "example": "Twintig euro, alstublieft." },
+    { "nl": "honderd", "pron": "HON-dert", "en": "hundred", "example": "Honderd meter verderop." }
+  ]
+}

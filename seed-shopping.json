@@ -1,0 +1,18 @@
+{
+  "topic": "shopping",
+  "label": "Shopping",
+  "words": [
+    { "nl": "de winkel", "pron": "duh VIN-kul", "en": "the shop", "example": "De winkel is dicht op zondag." },
+    { "nl": "de supermarkt", "pron": "duh SOO-per-markt", "en": "the supermarket", "example": "Ik ga naar de supermarkt." },
+    { "nl": "de kassa", "pron": "duh KAH-sah", "en": "the checkout", "example": "Sta in de rij bij de kassa." },
+    { "nl": "het geld", "pron": "ut khelt", "en": "the money", "example": "Heb je genoeg geld?" },
+    { "nl": "de prijs", "pron": "duh preys", "en": "the price", "example": "Wat is de prijs van dit?" },
+    { "nl": "duur", "pron": "dewr", "en": "expensive", "example": "Dit is te duur voor mij." },
+    { "nl": "goedkoop", "pron": "khoot-KOHP", "en": "cheap", "example": "Dat is heel goedkoop." },
+    { "nl": "de bon", "pron": "duh bon", "en": "the receipt", "example": "Mag ik de bon, alstublieft?" },
+    { "nl": "afrekenen", "pron": "AH-fray-kuh-nun", "en": "to pay / check out", "example": "Kan ik hier afrekenen?" },
+    { "nl": "passen", "pron": "PAH-sun", "en": "to try on", "example": "Mag ik dit passen?" },
+    { "nl": "de korting", "pron": "duh KOR-ting", "en": "the discount", "example": "Er is korting op schoenen." },
+    { "nl": "het wisselgeld", "pron": "ut VIH-sul-khelt", "en": "the change (money)", "example": "Hier is uw wisselgeld." }
+  ]
+}
