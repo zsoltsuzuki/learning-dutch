@@ -1,0 +1,18 @@
+{
+  "topic": "food",
+  "label": "Food & Drink",
+  "words": [
+    { "nl": "het brood", "pron": "ut broht", "en": "the bread", "example": "Ik koop vers brood." },
+    { "nl": "de kaas", "pron": "duh kahs", "en": "the cheese", "example": "Nederlandse kaas is lekker." },
+    { "nl": "het water", "pron": "ut VAH-tur", "en": "the water", "example": "Een glas water, graag." },
+    { "nl": "de koffie", "pron": "duh KO-fee", "en": "the coffee", "example": "Ik drink koffie zonder suiker." },
+    { "nl": "het bier", "pron": "ut beer", "en": "the beer", "example": "Twee bier, alstublieft." },
+    { "nl": "de melk", "pron": "duh melk", "en": "the milk", "example": "Melk staat in de koelkast." },
+    { "nl": "het ontbijt", "pron": "ut ont-BEYT", "en": "the breakfast", "example": "Ik eet ontbijt om zeven uur." },
+    { "nl": "het avondeten", "pron": "ut AH-vont-ay-tun", "en": "the dinner", "example": "Het avondeten is klaar." },
+    { "nl": "lekker", "pron": "LEH-kur", "en": "tasty / nice", "example": "Dat was heel lekker!" },
+    { "nl": "de rekening", "pron": "duh RAY-kuh-ning", "en": "the bill", "example": "Mag ik de rekening?" },
+    { "nl": "honger hebben", "pron": "HONG-ur HEH-bun", "en": "to be hungry", "example": "Ik heb honger." },
+    { "nl": "dorst hebben", "pron": "dorst HEH-bun", "en": "to be thirsty", "example": "Heb je dorst?" }
+  ]
+}

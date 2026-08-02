@@ -1,0 +1,11 @@
+{
+  "_comment": "Every data file the app loads. Add one line per new daily file. Order does not matter - words merge into decks by their 'topic' field.",
+  "files": [
+    "seed-greetings.json",
+    "seed-numbers.json",
+    "seed-shopping.json",
+    "seed-transport.json",
+    "seed-smalltalk.json",
+    "2026-08-02.json"
+  ]
+}
