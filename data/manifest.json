@@ -6,6 +6,8 @@
     "seed-shopping.json",
     "seed-transport.json",
     "seed-smalltalk.json",
-    "2026-08-02.json"
+    "2026-08-02.json",
+    "fruits.json",
+    "vegetables.json"
   ]
 }
