@@ -1,0 +1,18 @@
+{
+  "topic": "fruits",
+  "label": "Fruits",
+  "words": [
+    { "nl": "de appel", "pron": "duh AH-pul", "en": "the apple", "example": "Ik eet een appel." },
+    { "nl": "de banaan", "pron": "duh bah-NAHN", "en": "the banana", "example": "De banaan is rijp." },
+    { "nl": "de sinaasappel", "pron": "duh see-NAHS-ah-pul", "en": "the orange", "example": "Vers sap van een sinaasappel." },
+    { "nl": "de druif", "pron": "duh drowf", "en": "the grape", "example": "Deze druif is zoet." },
+    { "nl": "de aardbei", "pron": "duh AHRT-bey", "en": "the strawberry", "example": "Aardbeien met suiker." },
+    { "nl": "de citroen", "pron": "duh see-TROON", "en": "the lemon", "example": "Thee met citroen, graag." },
+    { "nl": "de peer", "pron": "duh payr", "en": "the pear", "example": "Een peer en een appel." },
+    { "nl": "de kers", "pron": "duh kers", "en": "the cherry", "example": "Kersen zijn nu in het seizoen." },
+    { "nl": "de perzik", "pron": "duh PER-zik", "en": "the peach", "example": "Deze perzik is heel zacht." },
+    { "nl": "de watermeloen", "pron": "duh VAH-tur-muh-loon", "en": "the watermelon", "example": "In de zomer eten we watermeloen." },
+    { "nl": "de ananas", "pron": "duh AH-nah-nas", "en": "the pineapple", "example": "Ananas past goed bij vis." },
+    { "nl": "zoet", "pron": "zoot", "en": "sweet", "example": "Deze druiven zijn heel zoet." }
+  ]
+}

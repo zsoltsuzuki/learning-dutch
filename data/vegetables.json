@@ -1,0 +1,18 @@
+{
+  "topic": "vegetables",
+  "label": "Vegetables",
+  "words": [
+    { "nl": "de aardappel", "pron": "duh AHRT-ah-pul", "en": "the potato", "example": "We eten vanavond aardappels." },
+    { "nl": "de tomaat", "pron": "duh toh-MAHT", "en": "the tomato", "example": "Verse tomaat in de salade." },
+    { "nl": "de ui", "pron": "duh ow", "en": "the onion", "example": "Snijd de ui fijn." },
+    { "nl": "de wortel", "pron": "duh VOR-tul", "en": "the carrot", "example": "Konijnen eten wortels." },
+    { "nl": "de komkommer", "pron": "duh kom-KOM-mur", "en": "the cucumber", "example": "Komkommer in de salade." },
+    { "nl": "de paprika", "pron": "duh PAH-pree-kah", "en": "the (bell) pepper", "example": "Rode paprika is zoet." },
+    { "nl": "de sla", "pron": "duh slah", "en": "the lettuce", "example": "Was de sla goed." },
+    { "nl": "de knoflook", "pron": "duh kuh-NOF-lohk", "en": "the garlic", "example": "Twee teentjes knoflook." },
+    { "nl": "de courgette", "pron": "duh koor-ZHET", "en": "the zucchini", "example": "Gegrilde courgette is lekker." },
+    { "nl": "de broccoli", "pron": "duh BROH-koh-lee", "en": "the broccoli", "example": "Broccoli is gezond." },
+    { "nl": "de champignon", "pron": "duh SHAM-pee-nyon", "en": "the mushroom", "example": "Champignons in de pasta." },
+    { "nl": "de bloemkool", "pron": "duh BLOOM-kohl", "en": "the cauliflower", "example": "Bloemkool met kaassaus." }
+  ]
+}
